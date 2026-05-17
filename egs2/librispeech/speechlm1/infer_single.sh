@@ -23,7 +23,7 @@ audio=examples/test.wav
 . ./path.sh
 . ./cmd.sh
 
-CUDA_VISIBLE_DEVICES=6 python ../../../espnet2/speechlm/bin/inference_single.py \
+CUDA_VISIBLE_DEVICES=5 python ../../../espnet2/speechlm/bin/inference_single.py \
     --audio ${audio} \
     --train-config ${train_config} \
     --inference-config ${inference_config} \
