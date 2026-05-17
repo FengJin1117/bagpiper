@@ -27,7 +27,7 @@ nohup bash start_bagpiper.sh > logs/service.log 2>&1 &
 # 准备
 CUDA_VISIBLE_DEVICES=5,6,7 nohup bash launch.sh --stage 1 --stop_stage 1 > logs/train_stage1.log 2>&1 &
 # 开始训练
-CUDA_VISIBLE_DEVICES=5,6,7 nohup bash launch.sh --stage 2 --stop_stage 2 > train_stage2.log 2>&1 &
+CUDA_VISIBLE_DEVICES=4,5 nohup bash launch.sh --stage 2 --stop_stage 2 > train_stage2.log 2>&1 &
 
 # 单卡训练
 CUDA_VISIBLE_DEVICES=5 nohup bash launch_naive.sh --stage 2 --stop_stage 2 > logs/train_naive_stage2.log 2>&1 &

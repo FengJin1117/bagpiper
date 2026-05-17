@@ -10,8 +10,8 @@ stop_stage=100
 
 # 分布式训练相关参数
 num_nodes=1       # 一个服务器
-num_proc_per_node=1 # 先单卡跑
-# num_proc_per_node=2 # 每个服务器上跑2个进程（一个进程一个GPU）
+# num_proc_per_node=1 # 先单卡跑
+num_proc_per_node=2 # 每个服务器上跑2个进程（一个进程一个GPU）
 node_rank=0       # 当前服务器的rank，单服务器训练时就是0
 master_addr=localhost   # 主节点地址，单服务器训练时就是localhost
 master_port=12346 # 主节点通信端口，确保这个端口在你的服务器上是空闲的
